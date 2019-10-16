@@ -1,10 +1,5 @@
-#!/usr/bin/python3 
-# 
-# Author: 
-# Assignment: 7
-# Description: 
-# Simple script to execute the MyPL interpreter. 
-#---------------------------------------------------------------------
+#Nicholas Latham
+
 import mypl_error as error 
 import mypl_lexer as lexer 
 import mypl_token as token 
@@ -25,7 +20,7 @@ def main(filename):
         file_stream.close() 
         sys.exit(e)
         
-def hw6(file_stream): 
+def main(file_stream): 
     the_lexer = lexer.Lexer(file_stream) 
     the_parser = parser.Parser(the_lexer) 
     stmt_list = the_parser.parse() 
